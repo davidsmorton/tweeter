@@ -17,18 +17,27 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
-  border: 5px solid greenyellow;
+  
 }
+/* body div {
+  position: fixed;
+  top: 0;
+  left: 0; 
+  z-index: 9999; 
+  width: 100%;
+} */
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-main  {
-  display: flex;
-  flex-direction: column;
+
+ main  {
+  
+  flex-flow: column;
   align-items: center;
   justify-content: center;
   width: 90%;
   margin: auto;
-  border: 5px solid blue;
+  /* border: 10px solid blue; */
   
 }
+

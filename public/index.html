@@ -12,16 +12,19 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    
   </head>
 
   <body class="body">
-    
+    <div class="sticky">
     <!-- Top nav bar (fixed) -->
     
     <nav class="navBar">
@@ -32,12 +35,12 @@
       <div class="arrow">
         <span></span>
         <span></span>
-        <span></span>
+        <span></span>        
       </div>
       </div>
     </div> 
     </nav>
-    <header class="header">
+    <header class="header" class="content">
           <img src="/images/profile-hex.png"> 
       <br>
           <h2 class="h2"><span>Scott</span> Morton</h2>
@@ -48,20 +51,41 @@
     <main class="container">
     
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets">
+        <!-- <h2>Compose Tweet</h2> -->
+        <form class="subTweet" method="POST" action="/tweets">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
-          <div>
+          <div class="submitFooter">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
-
+    </div>
+<section id="tweets-container">
+  <!-- <article class="tweet">
+    <header>
+      <div class="picName">
+      <img class="profilePic" src="/images/profile-hex.png">   
+      <p class="userName">Fake Dummy Name</p> 
+    </div>
+      <p class="handle">@FDummy</p>
+    </header>
+    <p class="actualTweetText">this is some text to Put in place and make sure that the text in the app works OUT</p> 
+    <footer>
+      <p class="tweetDate">10 days ago</p>  
+      <div class="icons">
+      <img src="/images/flag.jpg">
+      <img src="/images/retweet.svg">
+      <img src="/images/heart.png">
+    </div>
+    </footer>
+  </article>                        -->
+</section>
     </main>
 
     
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
    
   </body>
 </html>

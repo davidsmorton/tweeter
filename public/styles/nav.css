@@ -6,7 +6,12 @@ nav {
   display: flex;
   justify-content: center;
   display: flex;
-  border: 5px solid green;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  z-index: 9999; 
+  width: 100%;
+  
 }
 
 .navRow {
