@@ -4,8 +4,9 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// database....
+
 ////Helper Functions
+
 const escape =  function(str) {
   const div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
@@ -22,6 +23,8 @@ const showError = function(message) {
   $("#errorText").html(message);
   $("#errorContainer").slideDown(150);
 };
+
+//// Helper functions end
 
 // JQUERY USED
 $(document).ready(function() {
@@ -53,17 +56,19 @@ const renderTweets = function(tweets) {
 // Function that formats (CSS & HTML) tweets from server
 const tweetFormatter = function(tweet) {
   // check out object destructing...
-  const date = new Date(tweet.created_at);
+  const { user, content, created_at } = tweet;
+  const date = new Date(created_at);
+
   return $(`
       <article class="tweet">
         <header>
           <div class="picName">
-            <img class="profilePic" src="${escape(tweet.user.avatars)}">   
-            <p class="userName">${escape(tweet.user.name)}</p> 
+            <img class="profilePic" src="${escape(user.avatars)}">   
+            <p class="userName">${escape(user.name)}</p> 
           </div>
-          <p class="handle">${escape(tweet.user.handle)}</p>
+          <p class="handle">${escape(user.handle)}</p>
         </header>
-        <p class="actualTweetText">${escape(tweet.content.text)}</p> 
+        <p class="actualTweetText">${escape(content.text)}</p> 
         <footer>
           <p class="tweetDate">${escape(date.toLocaleString())}</p>  
           <div class="icons">
