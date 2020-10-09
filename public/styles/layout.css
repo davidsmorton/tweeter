@@ -41,3 +41,23 @@ body {
   
 }
 
+ .errorContainer {
+  color: #D8000C;
+  border: 3px;
+  padding: 2px;
+  display:flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: 5px;
+  font-size: 12;
+  font-weight: bold;
+  border: 5px solid  #D8000C;
+}
+.errorIcon {
+  background-image: url('https://i.imgur.com/GnyDvKN.png');
+  width: 32px;
+  height:32px;
+  margin: 15px;
+  display: block;
+}
+

@@ -15,11 +15,8 @@
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
-    <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
     
   </head>
 
@@ -51,9 +48,16 @@
     <main class="container">
     
       <section class="new-tweet">
+        <div id="errorContainer" class="errorContainer errorHidden"> 
+          <span class="errorIcon errorHidden" > </span>
+            <p id="errorText"></p>
+        </div>
         <!-- <h2>Compose Tweet</h2> -->
         <form class="subTweet" method="POST" action="/tweets">
           <label for="tweet-text">What are you humming about?</label>
+          
+
+
           <textarea name="text" id="tweet-text"></textarea>
           <div class="submitFooter">
             <button type="submit">Tweet</button>
@@ -62,29 +66,14 @@
         </form>
       </section>
     </div>
-<section id="tweets-container">
-  <!-- <article class="tweet">
-    <header>
-      <div class="picName">
-      <img class="profilePic" src="/images/profile-hex.png">   
-      <p class="userName">Fake Dummy Name</p> 
-    </div>
-      <p class="handle">@FDummy</p>
-    </header>
-    <p class="actualTweetText">this is some text to Put in place and make sure that the text in the app works OUT</p> 
-    <footer>
-      <p class="tweetDate">10 days ago</p>  
-      <div class="icons">
-      <img src="/images/flag.jpg">
-      <img src="/images/retweet.svg">
-      <img src="/images/heart.png">
-    </div>
-    </footer>
-  </article>                        -->
+<section id="tweets-container">                       
 </section>
     </main>
 
-    
+    <!-- External JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
    
   </body>
