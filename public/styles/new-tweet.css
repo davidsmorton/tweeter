@@ -1,5 +1,5 @@
 
-
+/* Styling new-tweet */
 
 .submitFooter {
   display: flex;
@@ -25,7 +25,6 @@
   
   border-style: none;
   border-bottom: 5px solid #545149;
-  height: 40px;
   resize: none;
   outline: none;
   display: flex;

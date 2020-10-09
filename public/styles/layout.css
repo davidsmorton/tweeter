@@ -3,6 +3,16 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+ /* 
+ Important Files: 
+ nav - styles the navigation bar
+ new-tweet.css - styles new tweets user posts
+ header - styles the user profile and name
+ tweets - styles posted tweets to the server
+ Note: a combination of JS, jQuery, HTML and CSS was used to complete this project - see scripts for JS and index.html */
+
+
  html {
   box-sizing: border-box;
 }
@@ -12,6 +22,7 @@
 /*
  * Global layout stuff
  */
+
 body {
   color: #545149;
   background-color: #f4f1ec;
@@ -19,26 +30,19 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   
 }
-/* body div {
-  position: fixed;
-  top: 0;
-  left: 0; 
-  z-index: 9999; 
-  width: 100%;
-} */
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
 
- main  {
-  
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  width: 90%;
-  margin: auto;
-  /* border: 10px solid blue; */
-  
+main  {
+ 
+ flex-flow: column;
+ align-items: center;
+ justify-content: center;
+
+}
+
+.mainContainer {
+
+  padding: 200px 10px 0 10px; 
+
 }
 
  .errorContainer {
@@ -52,7 +56,9 @@ body {
   font-size: 12;
   font-weight: bold;
   border: 5px solid  #D8000C;
+  display: none;
 }
+
 .errorIcon {
   background-image: url('https://i.imgur.com/GnyDvKN.png');
   width: 32px;
@@ -61,3 +67,16 @@ body {
   display: block;
 }
 
+/* DeskTop styling */
+@media only screen and (min-width: 768px)  {
+  .mainContainer {
+    display: flex; 
+    justify-content: space-evenly;
+  }
+
+  .header {
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+  }
+}
