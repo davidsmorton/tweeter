@@ -6,16 +6,16 @@ Starter code was provided by Lighthouse labs.
 
 ## Final Product
 
-!["Landing page (/)"]https://github.com/davidsmorton/tweeter/blob/master/docs/Landing_Page.png
+!["Landing page (/)"](https://github.com/davidsmorton/tweeter/blob/master/docs/Landing_Page.png)
 #### Landing page (/) 
 
-!["On hover (/)"] https://github.com/davidsmorton/tweeter/blob/master/docs/hover.png
+!["On hover (/)"](https://github.com/davidsmorton/tweeter/blob/master/docs/hover.png)
 #### On hover (/) 
 
-!["Error code, no text (/)"]https://github.com/davidsmorton/tweeter/blob/master/docs/error_code_no_text.png
+!["Error code, no text (/)"](https://github.com/davidsmorton/tweeter/blob/master/docs/error_code_no_text.png)
 #### Error code, no text (/)
 
-!["Error code, over 140 characters"]https://github.com/davidsmorton/tweeter/blob/master/docs/error_over140.png
+!["Error code, over 140 characters"](https://github.com/davidsmorton/tweeter/blob/master/docs/error_over140.png)
 #### Error code, over 140 characters
 
 ## Getting Started
